@@ -1,0 +1,92 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #1976d2c0;
+    cursor: pointer;
+  }
+  
+  /* Add some padding inside the card container */
+  .cardContainer {
+    padding: 2px 16px;
+  }
+
+
+
+/* #search-result-container{
+    visibility: hidden;
+} */
+
+.searchDownloadButton > a {
+    color: white;
+    text-decoration: none;
+}
+.searchDownloadButton:hover {
+    background-color: rgba(72, 72, 72, 0.505);
+    cursor: pointer;
+    transform: scale(1.10);
+}
+.searchDownloadButton{
+    display: block;
+    float: right;
+    border-radius: 5px;
+    background-color:  #1976d2;
+    padding: 4px;
+}
+
+
+#fileAtts {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+
+
+    display: flex;
+    
+    justify-content: flex-start; 
+    align-items: stretch; 
+    /* flex-flow: row wrap; */ 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: flex-start;
+
+    height: 100%;
+    /* padding: 5px; */
+    gap: 20px;
+}
+
+.search-tags-select-display{
+  margin-bottom: 0;
+  position: relative;
+  top: 15px;
+}
+
+.search-prkcds-select-display{
+  margin-bottom: 0;
+  position: relative;
+  top: 15px;
+}
+
+select {
+  background-color: white;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.721);
+}
+
+option{
+  font-style: italic;
+}
+
+option:disabled{
+  color: black;
+}
+
+.search-tags-select-display:hover, .search-prkcds-select-display:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+}

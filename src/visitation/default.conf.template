@@ -1,0 +1,9 @@
+resolver 127.0.0.11 8.8.8.8;
+
+server {
+    listen       80;
+    listen  [::]:80;
+    server_name  localhost ${DEFAULT_HOSTNAME};
+    root /var/www/html;
+    proxy_set_header Host $host;
+}

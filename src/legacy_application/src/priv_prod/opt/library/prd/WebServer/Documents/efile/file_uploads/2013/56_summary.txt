@@ -1,0 +1,157 @@
+DART BUNDLE SUMMARY
+
+Time:                         Thu Aug  9 10:50:51 2012
+
+OS:                           Mac : Mac OS X 10.8.0
+User Name:                    tomhoward
+Bundle on client computer:    /Users/tomhoward/Desktop/DARTBundle_0809_1050.zip
+
+=============================================================================================================================================
+Cisco AnyConnect Secure Mobility Client:
+
+Files Included in Bundle:
+ID                 Filename                      Description                               File Size 
+-----------------------------------------------------------------------------------------------------
+ac-config          hosts                         AnyConnect Configurations                 236 bytes 
+ac-dmp             Cisco AnyConnect Secure       AnyConnect program Dump Files             37.51K    
+                   Mobility                                                                          
+                   Client_2012-08-08-160436_To                                                       
+                   m-Howards-MacBook-Pro.crash                                                       
+ac-install         vpn-Darwin_i386-Release-3.0   AnyConnect install logs                   1.48K     
+                   .2052-k9-10402515062011.log                                                       
+ac-install         update.txt                    AnyConnect install logs                   10 bytes  
+ac-install         VPNManifest.dat               AnyConnect install logs                   129 bytes 
+ac-logs            system.log                    AnyConnect application logs               3.83M     
+ac-profile         RDPandLAN.xml                 AnyConnect Profile                        904 bytes 
+ac-profile         AnyConnectProfile.xsd         AnyConnect Profile                        98.25K    
+global-preferenc   anyconnect_global             AnyConnect Global Preferences             613 bytes 
+es                                                                                                   
+user-preferences   anyconnect                    AnyConnect User Preferences               702 bytes 
+-----------------------------------------------------------------------------------------------------
+
+
+Files Omitted from Bundle:
+ID                 Filename                      Description                               Reason Omitted                                    
+---------------------------------------------------------------------------------------------------------------------------------------------
+ac-config          N/A                           AnyConnect Configurations                 No file found with path matching: /etc/hosts.ac   
+ac-dmp             Cisco AnyConnect Secure       AnyConnect program Dump Files             /Users/tomhoward/Library/Logs/CrashReporter/Cisco 
+                   Mobility Client_*                                                       AnyConnect Secure Mobility Client_* not found on  
+                                                                                           client machine.                                   
+ac-dmp             vpndownloader_*               AnyConnect program Dump Files             /Users/tomhoward/Library/Logs/CrashReporter/vpndo 
+                                                                                           wnloader_* not found on client machine.           
+ac-dmp             vpnagentd_*                   AnyConnect program Dump Files             /Users/tomhoward/Library/Logs/CrashReporter/vpnag 
+                                                                                           entd_* not found on client machine.               
+ac-dmp             vpn_*                         AnyConnect program Dump Files             /Users/tomhoward/Library/Logs/CrashReporter/vpn_* 
+                                                                                           not found on client machine.                      
+ac-dmp             vpndownloader_*               AnyConnect program Dump Files             /Users/tomhoward/Library/Logs/DiagnosticReports/v 
+                                                                                           pndownloader_* not found on client machine.       
+ac-dmp             vpnagentd_*                   AnyConnect program Dump Files             /Users/tomhoward/Library/Logs/DiagnosticReports/v 
+                                                                                           pnagentd_* not found on client machine.           
+ac-dmp             vpn_*                         AnyConnect program Dump Files             /Users/tomhoward/Library/Logs/DiagnosticReports/v 
+                                                                                           pn_* not found on client machine.                 
+ac-dmp             Cisco AnyConnect Secure       AnyConnect program Dump Files             /System/Library/Logs/CrashReporter/Cisco          
+                   Mobility Client_*                                                       AnyConnect Secure Mobility Client_* not found on  
+                                                                                           client machine.                                   
+ac-dmp             vpndownloader_*               AnyConnect program Dump Files             /System/Library/Logs/CrashReporter/vpndownloader_ 
+                                                                                           * not found on client machine.                    
+ac-dmp             vpnagentd_*                   AnyConnect program Dump Files             /System/Library/Logs/CrashReporter/vpnagentd_*    
+                                                                                           not found on client machine.                      
+ac-dmp             vpn_*                         AnyConnect program Dump Files             /System/Library/Logs/CrashReporter/vpn_* not      
+                                                                                           found on client machine.                          
+ac-dmp             Cisco AnyConnect Secure       AnyConnect program Dump Files             /System/Library/Logs/DiagnosticReports/Cisco      
+                   Mobility Client_*                                                       AnyConnect Secure Mobility Client_* not found on  
+                                                                                           client machine.                                   
+ac-dmp             vpndownloader_*               AnyConnect program Dump Files             /System/Library/Logs/DiagnosticReports/vpndownloa 
+                                                                                           der_* not found on client machine.                
+ac-dmp             vpnagentd_*                   AnyConnect program Dump Files             /System/Library/Logs/DiagnosticReports/vpnagentd_ 
+                                                                                           * not found on client machine.                    
+ac-dmp             vpn_*                         AnyConnect program Dump Files             /System/Library/Logs/DiagnosticReports/vpn_* not  
+                                                                                           found on client machine.                          
+ac-install         N/A                           AnyConnect install logs                   No file found with path matching:                 
+                                                                                           /opt/cisco/anyconnect/AnyConnectLocalPolicy.xml   
+ac-localization    N/A                           AnyConnect Localizations                  No file found with path matching:                 
+                                                                                           /opt/cisco/anyconnect/l10n/*                      
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Notes:
+ - The file(s) of ID ac-log-hist is/are not included by default by this config.
+
+=============================================================================================================================================
+General Information:
+
+Files Included in Bundle:
+ID                 Filename                      Description                               File Size 
+-----------------------------------------------------------------------------------------------------
+ipconfig           ifconfig_result.txt           Interface Configuration                   1.38K     
+route              netstat_result.txt            Route Information                         2.65K     
+sysinfo            system_profiler_result.txt    System Information                        711.28K   
+sysinfo            kextstat_result.txt           System Information                        13.04K    
+system-logs        system.log                    System logs                               3.84M     
+system-logs        install.log                   System logs                               807.75K   
+-----------------------------------------------------------------------------------------------------
+
+
+Files Omitted from Bundle:
+ID                 Filename                      Description                               Reason Omitted                                    
+---------------------------------------------------------------------------------------------------------------------------------------------
+system-logs        N/A                           System logs                               No file found with path matching:                 
+                                                                                           /var/log/kernel.log                               
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Notes:
+ - The file(s) of ID Network Connetivity Test is/are not included by default by this config.
+ - The file(s) of ID system-log-hist is/are not included by default by this config.
+
+=============================================================================================================================================
+Cisco AnyConnect Posture Module:
+
+Files Included in Bundle:
+ID                 Filename                      Description                               File Size 
+-----------------------------------------------------------------------------------------------------
+posture-logs       system.log                    Posture application logs                  3.84M     
+-----------------------------------------------------------------------------------------------------
+
+
+Files Omitted from Bundle:
+ID                 Filename                      Description                               Reason Omitted                                    
+---------------------------------------------------------------------------------------------------------------------------------------------
+posture-logs       N/A                           Posture application logs                  No file found with path matching:                 
+                                                                                           /Users/tomhoward/.cisco/hostscan/log/*            
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+=============================================================================================================================================
+Cisco AnyConnect WebSecurity Module:
+
+Files Included in Bundle:
+ID                 Filename                      Description                               File Size 
+-----------------------------------------------------------------------------------------------------
+ws-install         WebSecurityCert.cfg           WebSecurity install logs                  1.18K     
+ws-install         WebSecurity.config            WebSecurity install logs                  8.00K     
+-----------------------------------------------------------------------------------------------------
+
+
+Files Omitted from Bundle:
+ID                 Filename                      Description                               Reason Omitted                                    
+---------------------------------------------------------------------------------------------------------------------------------------------
+ws-dmp             acobfuscate_*                 WebSecurity dump files                    /Users/tomhoward/Library/Logs/CrashReporter/acobf 
+                                                                                           uscate_* not found on client machine.             
+ws-dmp             acwebsecagent_*               WebSecurity dump files                    /Users/tomhoward/Library/Logs/CrashReporter/acweb 
+                                                                                           secagent_* not found on client machine.           
+ws-dmp             acobfuscate_*                 WebSecurity dump files                    /System/Library/Logs/CrashReporter/acobfuscate_*  
+                                                                                           not found on client machine.                      
+ws-dmp             acwebsecagent_*               WebSecurity dump files                    /System/Library/Logs/CrashReporter/acwebsecagent_ 
+                                                                                           * not found on client machine.                    
+ws-dmp             acobfuscate_*                 WebSecurity dump files                    /Users/tomhoward/Library/Logs/DiagnosticReports/a 
+                                                                                           cobfuscate_* not found on client machine.         
+ws-dmp             acwebsecagent_*               WebSecurity dump files                    /Users/tomhoward/Library/Logs/DiagnosticReports/a 
+                                                                                           cwebsecagent_* not found on client machine.       
+ws-dmp             acobfuscate_*                 WebSecurity dump files                    /System/Library/Logs/DiagnosticReports/acobfuscat 
+                                                                                           e_* not found on client machine.                  
+ws-dmp             acwebsecagent_*               WebSecurity dump files                    /System/Library/Logs/DiagnosticReports/acwebsecag 
+                                                                                           ent_* not found on client machine.                
+ws-install         N/A                           WebSecurity install logs                  No file found with path matching:                 
+                                                                                           /opt/cisco/anyconnect/websecurity/WebSecurity_Ser 
+                                                                                           viceProfile.wso                                   
+---------------------------------------------------------------------------------------------------------------------------------------------

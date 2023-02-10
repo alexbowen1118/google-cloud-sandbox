@@ -1,0 +1,57 @@
+.list {
+    align-items: center;
+}
+
+.item-title {
+    margin: 10px 10px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+}
+
+.active-status {
+    height: min-content;
+    background-color: rgba(30, 255, 0, 0.251);
+    border-radius: 5px;
+}
+
+.active-status:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #28b915;
+    cursor: pointer;
+}
+
+.tab-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    width: 10px;
+    height: 10px;
+}
+
+.add-button {
+    white-space: nowrap;
+    height: min-content;
+    background-color: rgba(30, 255, 0, 0.251);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.add-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #28b915;
+    cursor: pointer;
+}
+
+.input-button {
+    display: flex;
+    align-items: center;
+}
+
+.right-half {
+    vertical-align: top;
+}

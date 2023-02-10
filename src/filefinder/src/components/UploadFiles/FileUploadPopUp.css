@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27');
+
+/* body {
+    background-color: #A0AFA0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(186,205,183,1) 85%);
+    margin: 0%;
+    padding: 0%;
+    
+} */
+
+h2 {
+
+    text-align: left;
+    margin: 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.UploadFilesContainer {
+    display: block;
+    /* max-height: 750px;
+    background-color: aqua; */
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.FilterSelectContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+/* .TextFieldContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: .5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: start;
+    margin-top: 80px;
+    overflow: auto;
+}
+    
+.grid-item1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    padding-top: 5px;
+    
+}
+.grid-item2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+
+.TextFieldContainer > div > label {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+} */
+
+.DragAndDrop { 
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0;    
+    width: 600px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content:space-evenly;
+    max-height: 150px;
+}
+

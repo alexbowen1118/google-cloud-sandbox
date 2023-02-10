@@ -1,0 +1,32 @@
+.dropbox {
+    border-color: black;
+    border-style:dashed;
+    border-radius: 1rem;
+    background-color:rgb(255, 255, 255);
+    height: 200px;
+}
+  
+.dropbox:hover {
+    background-color: gray;
+}
+
+#fileList {
+    height: 100px;
+    overflow: auto;
+}
+
+.container {
+    height: 300px;
+}
+
+aside {
+    height: 50px;
+}
+
+#uploadFilesText {
+    text-align: center;
+    padding: 80px;
+}
+#uploadFilesText1 {
+    text-align: center;
+}

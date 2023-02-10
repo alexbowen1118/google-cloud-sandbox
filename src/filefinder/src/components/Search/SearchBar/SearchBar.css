@@ -1,0 +1,12 @@
+
+
+#search-select-inputLabel-id, #search-tags-multiple-checkbox-label, 
+#search-parkcodes-multiple-checkbox-label, #search-date-input-label, 
+#search-parkcodes-multiple-checkbox, #search-tags-multiple-checkbox, #search-select-business-unit,
+#search-select-document-type {
+    color: white;
+}
+
+/* .FilterSelectContainer, .search-content-container{
+    width:100%;
+} */

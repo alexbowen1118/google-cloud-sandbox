@@ -1,0 +1,51 @@
+# Specify the docker dns server and a generic dns.
+resolver 127.0.0.1 8.8.8.8;
+
+server {
+    listen       80;
+    listen  [::]:80;
+    server_name  localhost ${DEFAULT_HOSTNAME};
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    server_name ${DEFAULT_HOSTNAME};
+    ssl_certificate /run/secrets/domain.crt;
+    ssl_certificate_key  /run/secrets/domain.key;
+
+    location / {
+        proxy_pass http://legacy;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+
+    location /dbadmin/ {
+        proxy_pass http://phpmyadmin/;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+
+    location /api {
+        proxy_pass http://api;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_read_timeout 10000;
+        proxy_connect_timeout 10000;
+    }
+
+    location /calendar {
+        proxy_pass http://calendar;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+
+    location /visitation {
+        proxy_pass http://visitation;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_read_timeout 10000;
+        proxy_connect_timeout 10000;
+    }
+    
+    location /filefinder {
+        proxy_pass http://filefinder;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+}

@@ -1,0 +1,118 @@
+/* CSS Document */
+
+/*PAGE LAYOUT*/
+body {
+	background-color: beige;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+
+#contenttext{
+	float:left; width:80%; 
+	background-color:beige;
+	min-height:360px;
+}
+
+#pagetitle{
+	position:relative; float:left; width:608px; height:110px; background-color:#F7F7F7; border-right:solid 1px #999999;
+}
+#title{
+	position:absolute; right:10px; bottom:0px; width:600px;
+}
+#menu{
+	float:left; width:143px; margin:10px;
+}
+#footer{
+	width:590px; padding-right:10px; padding-left:200px;
+}
+
+/*GRAY PANEL*/
+.panel{
+	padding:12px;
+	border:solid 1px #E4E4E4;
+	background-color:#EEEEEE;
+	margin:10px;
+	padding:10px;
+	width:550px;
+	height:160px;
+}
+
+/*TEXT STYLES*/
+.insectheader {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 14px;
+	color: #666666;
+}
+.bodytext {
+	font: 0.9em Tahoma, sans-serif;
+	color: #666666;
+}
+.smalltext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.smallwhitetext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+.smallwhitetext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-decoration:none;
+}
+.smallwhitetext a:hover{
+	text-decoration:underline;
+}
+.smallgraytext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#CCCCCC;
+}
+.smallgraytext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#CCCCCC;
+	text-decoration:none;
+}
+.smallgraytext a:hover{
+	text-decoration:underline;
+}
+.titletext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color: #CCCCCC;
+}
+.logotext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color: #999999;
+}
+
+#linksmenu a{
+	float:left; 
+	width:139px; 
+	height:20px; 
+	background-color:#ABC578; border-left:solid 1px #FFFFFF; border-bottom:solid 1px #FFFFFF;
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-decoration:none;
+	padding-top:5px;
+	padding-left:5px;
+}
+#linksmenu a:hover{
+	background-color:#800080;
+}

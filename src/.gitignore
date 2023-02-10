@@ -1,0 +1,8 @@
+logs/*
+!logs/.gitkeep
+secrets/
+documentation/
+!example.env
+.DS_Store
+.idea
+.vscode

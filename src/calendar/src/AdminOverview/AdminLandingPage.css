@@ -1,0 +1,24 @@
+.adminLandingPage {
+    width: 50%;
+}
+
+.adminHomeHeader {
+    padding: 20px;
+    text-align: left;
+    background: darkblue;
+    color: white;
+    font-size: 10px;
+    width: 25%
+  }
+
+button {
+    width: 50%;
+    background-color: #1e98d1;
+    border: none;
+    border-radius: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 2px;
+    cursor: pointer;
+}

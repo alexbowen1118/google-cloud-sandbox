@@ -1,0 +1,1 @@
+The docker DNS resolver must be specifed in the nginx config so that nginx knows how to decipher compose dns names. The default DNS endpoint in docker is 127.0.0.11.
