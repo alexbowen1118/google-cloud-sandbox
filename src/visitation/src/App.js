@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {CssBaseline, Switch, ThemeProvider} from "@mui/material";
+import {CssBaseline, ThemeProvider} from "@mui/material";
 import { useDefaultTheme } from './theme';
 import LoginPage from "./Components/Auth/LoginPage";
 import Dashboard from "./Components/Dashboard";
@@ -16,11 +16,9 @@ import ViewAllDataPage from "./Components/VisitationData/ViewAllDataPage";
 import AddMultiplierRule from "./Components/Devices/AddMultiplierRule";
 import EditMultiplierRule from "./Components/Devices/EditMultiplierRule";
 import ProSidebar from "./global/ProSidebar";
-import {ProSidebarProvider} from "react-pro-sidebar";
 
 function App() {
     const theme = useDefaultTheme();
-    let pathName = '/visitation';
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
