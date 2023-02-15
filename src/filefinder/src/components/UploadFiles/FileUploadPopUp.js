@@ -58,8 +58,10 @@ function FileUploadPopUp({closePopUp, parentCallback}) {
                 APIClient.FilterButton.getParkCodes(),
                 APIClient.FilterButton.getDocumentTypesByStatus(1),
                 APIClient.FilterButton.getBusinessUnitsByStatus(1),
-            ]).then(([res1, res2, res3, res4]) => {    
+            ]).then(([res1, res2, res3, res4]) => {
+                console.log(res1)
                 setTags(res1.tags.active);
+                console.log(res2)
                 setParkCodes(res2.parks);
                 setDocumentTypes(res3.documenttypes.active);
                 setBusinessUnits(res4.businessunits.active);
@@ -69,8 +71,9 @@ function FileUploadPopUp({closePopUp, parentCallback}) {
         } catch (err) {
             console.warn(err);
         }
-    }
 
+    }
+    console.log(parkCodes)
 
    /**
     * When the user changes the value of the dropdown, set the state of the documentTypeDisplay to the
@@ -128,7 +131,6 @@ function FileUploadPopUp({closePopUp, parentCallback}) {
      */
     const handleUploadedFile = (givenFile) => {
         setuploadedDoc(givenFile);
-        
     }
 
     /**
@@ -271,13 +273,13 @@ function FileUploadPopUp({closePopUp, parentCallback}) {
                         onChange={handleParkCodeChange}
                         input={<OutlinedInput label="Park Codes" />}
                         renderValue={(selected) => 
-                            selected.map(targetId => parkCodes.filter(currObj => currObj.id == targetId)[0].parkCode).join(", ")}
+                            selected.map(targetId => parkCodes.filter(currObj => currObj.id == targetId)[0].code).join(", ")}
                         MenuProps={MenuProps}
                     >
                         {parkCodes?.map((code) => 
                         <MenuItem key={code.id} value={code.id}>
                         <Checkbox checked={selectedParkCodeArray.indexOf(code.id) > -1} />
-                        <ListItemText primary={code.parkCode} />
+                        <ListItemText primary={code.code} />
                         </MenuItem>
                         )} 
                     </Select>

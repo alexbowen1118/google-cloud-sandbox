@@ -145,7 +145,7 @@ class UbidotsAPI
         } elseif ($datatype == "v") {
 
             //create visit models for all visits on each device
-            for ($i = 0; $i < 9; $i++) {
+            for ($i = 0; $i < count($datasources); $i++) {
 
                 //datasource for this device
                 $d = $datasources[$i];

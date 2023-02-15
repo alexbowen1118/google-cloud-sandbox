@@ -380,13 +380,13 @@ export default function SearchBar({searchParams}) {
                         onChange={handleParkCodeChange}
                         input={<OutlinedInput label="Park Codes" />}
                         renderValue={(selected) => 
-                            selected.map(targetId => parkCodes.filter(currObj => currObj.id === targetId)[0].parkCode).join(", ")}
+                            selected.map(targetId => parkCodes.filter(currObj => currObj.id === targetId)[0].code).join(", ")}
                         MenuProps={MenuProps}
                     >
                         {parkCodes?.map((code) => 
                         <MenuItem key={code.id} value={code.id}>
                         <Checkbox color='secondary' checked={selectedParkCodeArray.indexOf(code.id) > -1} />
-                        <ListItemText primary={code.parkCode} />
+                        <ListItemText primary={code.code} />
                         </MenuItem>
                         )} 
                     </Select>

@@ -18,7 +18,7 @@ const Dashboard = () => {
     const [isHourly, setHourly] = useState(false);
     const [visits,setVisits]=useState([])
     const [parks,setParks]=useState([])
-    const [par_id, setCurrentPark]=useState(284/**sessionStorage.getItem("park")*/)
+    const [par_id, setCurrentPark]=useState(sessionStorage.getItem("park"))
 
     // entire year counts
     const [ytdTotalRange, setYTDRange]=useState([new Date(new Date().getFullYear(), 0, 1), new Date()])

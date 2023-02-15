@@ -8,8 +8,6 @@ class ParkDAO extends DAO {
 
   protected $BaseQuery = "SELECT * FROM ncparks.park ";
 
-
-  
   function getParkById($id) {
     $DBConn = $this->DBPool->request();
     $DBConn->query($this->BaseQuery." WHERE par_id = ?",
@@ -23,8 +21,6 @@ class ParkDAO extends DAO {
     $this->DBPool->release($DBConn);
     return $Park;
   }
-
-
 
   function getParkIdByCode($code) {
     $DBConn = $this->DBPool->request();
@@ -40,7 +36,16 @@ class ParkDAO extends DAO {
     return $par_id;
   }
 
-
+  function getParkCodes() {
+    $DBConn = $this->DBPool->request();
+    $DBConn->query($this->BaseQuery);
+    $ParkCodes = [];
+    while ($DBConn->nextRow()) {
+        $ParkCodes[] = $DBConn->getRow()['par_code'];
+    }
+    $this->DBPool->release($DBConn);
+    return $ParkCodes;
+}
   
   function getAllParks() {
     $DBConn = $this->DBPool->request();
