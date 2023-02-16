@@ -260,15 +260,12 @@ class VisitationRoutes {
           ->setArgument("permissions", "ALL")
           ->add(TokenAuthMiddleware::class);
 
-
-
-
-
     //**UBIDOTS API CALLS**//
     $group->group('/fetch', function ($group) {
       $group->get('/devices', Actions\Visitation\Devices\FetchLegacyDevicesAction::class);
       $group->get('/visits', Actions\Visitation\Devices\FetchLegacyVisitsAction::class);
-    })->add(UbidotsAuthMiddleware::class);
+    });
+    //->add(UbidotsAuthMiddleware::class);
 
     //**WEBHOOK**//
     $group->post('/incoming', Actions\Visitation\Visits\CreateVisitFromWebhookAction::class)

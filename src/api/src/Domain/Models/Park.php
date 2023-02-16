@@ -7,15 +7,15 @@ use DPR\API\Domain\DomainModel;
 class Park extends DomainModel {
 
     public $id;
-    public $parkCode;
-    public $regionId;
-    public $adminBy;
+    public $code;
+    public $reg_id;
+    public $admin_by;
     public $name;
     public $lat;
     public $lon;
 
     function __construct($data) {
-        $this->JSONFields = array('id', 'park_code', 'region_id', 'admin_by', 'name', 'lat', 'lon');
+        $this->JSONFields = array('id', 'code', 'reg_id', 'admin_by', 'name', 'lat', 'lon');
         if(is_array($data)) { //Coming from the database
             $this->setId($data['par_id']);
             $this->setParkCode($data['par_code']);
@@ -28,8 +28,8 @@ class Park extends DomainModel {
         elseif(is_string($data)) { //Coming from JSON
             $data = json_decode($data);
             if(isset($data->id)) $this->setId($data->id);
-            if(isset($data->park_code)) $this->setParkCode($data->park_code);
-            if(isset($data->region_id)) $this->setRegionId($data->region_id);
+            if(isset($data->code)) $this->setParkCode($data->code);
+            if(isset($data->reg_id)) $this->setRegionId($data->reg_id);
             if(isset($data->admin_by)) $this->setAdminBy($data->admin_by);
             if(isset($data->name)) $this->setName($data->name);
             if(isset($data->lat)) $this->setLat($data->lat);
@@ -49,24 +49,24 @@ class Park extends DomainModel {
         return $this->parkCode;
     }
 
-    public function setParkCode($parkCode) {
-        $this->parkCode = $parkCode;
+    public function setParkCode($par_code) {
+        $this->code = $par_code;
     }
 
     public function getRegionId() {
-        return $this->regionId;
+        return $this->reg_id;
     }
 
-    public function setRegionId($regionId) {
-        $this->regionId = $regionId;
+    public function setRegionId($reg_id) {
+        $this->reg_id = $reg_id;
     }
 
     public function getAdminBy() {
-        return $this->adminBy;
+        return $this->admin_by;
     }
 
-    public function setAdminBy($adminBy) {
-        $this->adminBy = $adminBy;
+    public function setAdminBy($admin_by) {
+        $this->admin_by = $admin_by;
     }
 
     public function getName() {

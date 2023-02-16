@@ -3,34 +3,10 @@ import {Menu, MenuItem, useProSidebar, Sidebar} from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import {Link, useNavigate} from "react-router-dom";
 import { tokens } from "../theme";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import SsidChartIcon from '@mui/icons-material/SsidChart';
 import AodIcon from '@mui/icons-material/Aod';
-import SatelliteIcon from '@mui/icons-material/Satellite';
-
-
-const Item = ({ title, to, icon, selected, setSelected }) => {
-    const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
-    return (
-        <Box  mb="75px" >
-        <MenuItem routerlink={<Link to={to} />}
-            active={selected === title}
-            style={{
-                color: colors.parksblue[800],
-                alignItems: "left"
-            }}
-            onClick={() => setSelected(title)}
-                  icon={icon}
-        >
-            <Typography>{title}</Typography>
-        </MenuItem>
-        </Box>
-    );
-};
 
 const ProSidebar = () => {
     const theme = useTheme();
@@ -90,7 +66,6 @@ const ProSidebar = () => {
 
                             </MenuItem>
 
-
                                 <Box mb="85px" mt = "50px">
                                     {/*<Box display="flex" justifyContent="center" alignItems="center">*/}
                                     {/*    <img*/}
@@ -125,29 +100,55 @@ const ProSidebar = () => {
                                 </Box>
 
 
-                            <Box paddingLeft={collapsed ? undefined : "10%"}>
-                                <Item
-                                    title={collapsed ? undefined : "Dashboard"}
-                                    to="/MainLandingPage"
-                                    icon={<SsidChartIcon />}
-                                    selected={selected}
-                                    setSelected={setSelected}
-                                />
-                                <Item
-                                    title={collapsed ? undefined : "Devices"}
-                                    to="/ViewDevicesPage"
-                                    icon={<AodIcon />}
-                                    selected={selected}
-                                    setSelected={setSelected}
-                                />
-                                <Item
-                                    title={collapsed ? undefined : "Visitation Data"}
-                                    to="/ViewAllDataPage"
-                                    icon={<PeopleOutlinedIcon />}
-                                    selected={selected}
-                                    setSelected={setSelected}
-                                />
-                            </Box>
+                                <Box  mb="75px" >
+                                    <MenuItem
+                                        onClick={() => {
+                                            navigate("/MainLandingPage")
+                                            setSelected("Dashboard");
+                                        }}
+                                        active={selected === "Dashboard"}
+                                        style={{
+                                            color: colors.parksblue[800],
+                                            alignItems: "left"
+                                        }}
+                                        icon={<SsidChartIcon />}
+                                    >
+                                        <Typography>Dashboard</Typography>
+                                    </MenuItem>
+                                </Box>
+                                <Box  mb="75px" >
+                                    <MenuItem
+                                        onClick={() => {
+                                            navigate("/ViewDevicesPage")
+                                            setSelected("Devices");
+                                        }}
+                                        active={selected === "Devices"}
+                                        style={{
+                                            color: colors.parksblue[800],
+                                            alignItems: "left"
+                                        }}
+                                        icon={<AodIcon />}
+                                    >
+                                        <Typography>Devices</Typography>
+                                    </MenuItem>
+                                </Box>
+                                <Box  mb="75px" >
+                                    <MenuItem
+                                        onClick={() => {
+                                            navigate("/ViewAllDataPage");
+                                            setSelected("Visitation Data");
+                                        }}
+                                        active={selected === "Visitation Data"}
+                                        style={{
+                                            color: colors.parksblue[800],
+                                            alignItems: "left"
+                                        }}
+                                        icon={<PeopleOutlinedIcon />}
+                                    >
+                                        <Typography>Visitation Data</Typography>
+                                    </MenuItem>
+                                </Box>
+
                         </Menu>
                     </Sidebar>
                 </div>

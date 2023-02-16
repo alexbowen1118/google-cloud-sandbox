@@ -4,8 +4,6 @@ import SearchService from './api/SearchService';
 import TopicViewService from './api/TopicViewService';
 import AdminActionsService from './api/AdminActionsService';
 
-
-
 const APIClient = {
     UploadFile: UploadFileService,
     FilterButton: FilterButtonService,

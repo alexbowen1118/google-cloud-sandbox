@@ -28,12 +28,12 @@ class UbidotsAuthMiddleware implements Middleware
     public function process(Request $request, RequestHandler $handler): Response
     {
         // Check that key in included in header
-        if ($request->getHeader("X-API-Key") == null) {
+        if ($request->getHeader("x-auth-token") == null) {
             throw new HttpUnauthorizedException($request);
         }
 
         // Get key from header
-        $requestKey = $request->getHeader("X-API-Key")[0];
+        $requestKey = $request->getHeader("x-auth-token")[0];
 
         // Our key - saved as an environment variable
         $ubidotsKey = getenv('UBIDOTS_API_KEY');

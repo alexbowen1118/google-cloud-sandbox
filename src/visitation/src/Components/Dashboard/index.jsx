@@ -1,19 +1,15 @@
-import {Box, Button, FormControl, IconButton, InputLabel, MenuItem, Select, Typography, useTheme} from "@mui/material";
+import {Box, FormControl, InputLabel, MenuItem, Select, Typography, useTheme} from "@mui/material";
 import { tokens } from "../../theme";
 import DynamicLineChart from "./DynamicLineChart";
 import React, {useEffect, useState} from "react";
 import APIClient from "../../utils/APIClient";
-import MetricBox from "./MetricBox";
 import Header from "../../global/Header";
 import DateRangePicker from "rsuite/DateRangePicker";
-const { allowedMaxDays, afterToday, combine } =
-    DateRangePicker;
-import {
-    subDays
-} from "rsuite/cjs/utils/dateUtils";
+import {subDays} from "rsuite/cjs/utils/dateUtils";
 import './index.css';
 import BarChart from "./BarChart";
 import ComparisonBarChart from "./ComparisonBarChart";
+import {afterToday, allowedMaxDays, combine} from "rsuite/cjs/DateRangePicker/disabledDateUtils";
 
 const Dashboard = () => {
     const theme = useTheme();
@@ -22,8 +18,7 @@ const Dashboard = () => {
     const [isHourly, setHourly] = useState(false);
     const [visits,setVisits]=useState([])
     const [parks,setParks]=useState([])
-    const [par_id, setCurrentPark]=useState(284/**sessionStorage.getItem("park")*/)
-    const [data, setCurrentData]=useState([])
+    const [par_id, setCurrentPark]=useState(sessionStorage.getItem("park"))
 
     // entire year counts
     const [ytdTotalRange, setYTDRange]=useState([new Date(new Date().getFullYear(), 0, 1), new Date()])
