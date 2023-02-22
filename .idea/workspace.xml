@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="added google cloud settings">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/app/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/app/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/src/Application/Actions/Visitation/Devices/FetchLegacyVisitsAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/src/Application/Actions/Visitation/Visits/FetchLegacyVisitsAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/src/Domain/Ubidots/UbidotsAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/src/Domain/Ubidots/UbidotsAPI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/src/Domain/UbidotsAPI.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev.env" afterDir="false" />
+    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="added options for cloud logging">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/alexb/PhpstormProjects/ncsufall2022",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexb/PhpstormProjects/ncsufall2022&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexb\PhpstormProjects\ncsufall2022\src\filefinder\src\utils\api" />
@@ -87,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676478084087</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added options for cloud logging">
+      <created>1677084580140</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677084580140</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +122,7 @@
     <MESSAGE value="Small changes to documentation" />
     <MESSAGE value="Fixed frontend on both apps, tested data fetches, aws still not working" />
     <MESSAGE value="added google cloud settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="added google cloud settings" />
+    <MESSAGE value="added options for cloud logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="added options for cloud logging" />
   </component>
 </project>
