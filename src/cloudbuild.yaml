@@ -5,10 +5,10 @@ steps:
 
 # Build the new docker image.
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcb-docker-compose:latest', '.']
+    args: ['build', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo', '.']
 
 # Push the new image to the registry.
-images: ['gcr.io/$PROJECT_ID/gcb-docker-compose:latest']
+images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo']
 
 options:
   logging: CLOUD_LOGGING_ONLY
