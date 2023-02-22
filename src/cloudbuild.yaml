@@ -1,14 +1,11 @@
-steps:
-  # running docker-compose
-  - name: 'docker/compose:1.26.2'
-    args: ['up', '-d']
-
 # Build the new docker image.
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo', '.']
+    args: ['build', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest', '.']
 
 # Push the new image to the registry.
-images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest', '.']
+images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest']
 
 options:
   logging: CLOUD_LOGGING_ONLY
