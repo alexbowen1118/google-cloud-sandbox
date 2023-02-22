@@ -2,20 +2,20 @@ version: '3.7'
 
 # Declare the containers to run in the compose stack
 services:
-#  nginx:
-#    image: nginx
-#    restart: unless-stopped
-#    # Copy config files
-#    volumes:
-#      - ./secrets/domain.crt:/run/secrets/domain.crt
-#      - ./secrets/domain.key:/run/secrets/domain.key
-#      - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template
-#    # Expose https and http ports. All http traffic will be redirected to https by nginx
-#    ports:
-#      - "443:443"
-#      - "80:80"
-#    env_file:
-#      - dev.env
+  nginx:
+    image: nginx
+    restart: unless-stopped
+    # Copy config files
+    volumes:
+      - ./secrets/domain.crt:/run/secrets/domain.crt
+      - ./secrets/domain.key:/run/secrets/domain.key
+      - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template
+    # Expose https and http ports. All http traffic will be redirected to https by nginx
+    ports:
+      - "449:449"
+      - "80:80"
+    env_file:
+      - dev.env
 
 
   mariadb:
