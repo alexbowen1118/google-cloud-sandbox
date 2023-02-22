@@ -1,13 +1,14 @@
 steps:
+# Run docker-compose.yml
   - name: 'docker/compose'
     id: 'compose-up'
     args: [ '-f', 'src/docker-compose.yml', 'up', '-d' ]
 
-# Build the new docker image.
+# Build the new docker image in the Artifact Registry.
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest', '.']
 
-# Push the new image to the registry.
+# Push the new image to the Artifact Registry.
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest', '.']
 
