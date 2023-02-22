@@ -136,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677093105641</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="messing with cloudbuild.yaml">
+      <created>1677093302272</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677093302272</updated>
+    </task>
+    <task id="LOCAL-00011" summary="messing with cloudbuild.yaml">
+      <created>1677093374233</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677093374233</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
