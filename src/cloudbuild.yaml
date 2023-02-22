@@ -6,7 +6,7 @@ steps:
 
 # Push the new image to the registry.
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest', '.']
+    args: ['push', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest', '.']
 images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest']
 
 options:
