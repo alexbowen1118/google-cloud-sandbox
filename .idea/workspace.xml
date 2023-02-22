@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="added options for cloud logging">
+    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="messing with cloudbuild.yaml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
     </list>
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677084580140</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="messing with cloudbuild.yaml">
+      <created>1677086337428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677086337428</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +130,7 @@
     <MESSAGE value="Fixed frontend on both apps, tested data fetches, aws still not working" />
     <MESSAGE value="added google cloud settings" />
     <MESSAGE value="added options for cloud logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="added options for cloud logging" />
+    <MESSAGE value="messing with cloudbuild.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="messing with cloudbuild.yaml" />
   </component>
 </project>

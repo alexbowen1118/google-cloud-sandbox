@@ -1,8 +1,4 @@
 steps:
-  # Install dependencies.
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['install']
-
 
   # Build the new docker image.
   - name: 'gcr.io/cloud-builders/docker'
@@ -15,6 +11,9 @@ steps:
     args: ['up', '-d']
     env:
       - 'PROJECT_ID=$PROJECT_ID'
+
+# Push the new image to the registry.
+images: ['gcr.io/$PROJECT_ID/gcb-docker-compose:latest']
 
 options:
   logging: CLOUD_LOGGING_ONLY
