@@ -1,7 +1,7 @@
 steps:
   - name: 'docker/compose'
     id: 'compose-up'
-    args: [ '-f', 'docker-compose.yml', 'up', '-d' ]
+    args: [ '-f', 'src/docker-compose.yml', 'up', '-d' ]
 
 # Build the new docker image.
   - name: 'gcr.io/cloud-builders/docker'
