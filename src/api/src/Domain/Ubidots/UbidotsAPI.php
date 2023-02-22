@@ -143,7 +143,6 @@ class UbidotsAPI
 
             /**  if returning visit models */
         } elseif ($datatype == "v") {
-
             //create visit models for all visits on each device
             for ($i = 0; $i < count($datasources); $i++) {
 
@@ -153,7 +152,12 @@ class UbidotsAPI
                 $raw_variables = null;
 
                 //parse name into usable park id and dev function
-                $parsedname = explode("-", $d['name']);
+                if($d['name']){
+                    $parsedname = explode("-", $d['name']);
+                } else {
+                    continue;
+                }
+
                 $par_id = null;
                 if (count($parsedname) == 5) {
                     $par_id = $parsedname[2];
@@ -167,7 +171,12 @@ class UbidotsAPI
                 $raw_variables = curl_exec($ch);
                 $raw_variables = json_decode($raw_variables, true);
 
-                if (!array_key_exists(8, $raw_variables["results"])) {
+                if ($raw_variables["results"]) {
+                    if (!array_key_exists(8, $raw_variables["results"])) {
+                        continue;
+                    }
+                }
+                else{
                     continue;
                 }
 
@@ -176,7 +185,10 @@ class UbidotsAPI
                     //GET first result for hourly visitation data
                     curl_setopt($ch, CURLOPT_URL, $hourly_data_url);
                     $raw_visits = curl_exec($ch);
-                    $raw_visits = json_decode($raw_visits, true);
+                    if ($raw_visits){
+                        $raw_visits = json_decode($raw_visits, true);
+
+                    }
                     //take API calls through all next pages to create remaining visit models
                     while ($raw_visits) {
                         //for each visit on the page

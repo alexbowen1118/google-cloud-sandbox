@@ -34,6 +34,10 @@ return function (ContainerBuilder $containerBuilder) {
                 'ubidots' => [
                     'apikey' => getenv('UBIDOTS_API_KEY') ?? '',
                     'datasources_url' => getenv('UBIDOTS_DATASOURCES_URL') ?? ''
+                ],
+                'gcloud' => [
+                    'project_id' => getenv('GOOGLE_CLOUD_PROJECT') ?? '',
+                    'json_keyfile' => getenv('GOOGLE_APPLICATION_CREDENTIALS') ?? ''
                 ]
             ]);
         }
