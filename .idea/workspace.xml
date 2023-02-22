@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="messing with cloudbuild.yaml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="changing nginx port" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677096087594</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="messing with cloudbuild.yaml">
+      <created>1677097957854</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1677097957854</updated>
+    </task>
+    <task id="LOCAL-00021" summary="changing nginx port">
+      <created>1677098127152</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677098127153</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +255,7 @@
     <MESSAGE value="added google cloud settings" />
     <MESSAGE value="added options for cloud logging" />
     <MESSAGE value="messing with cloudbuild.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="messing with cloudbuild.yaml" />
+    <MESSAGE value="changing nginx port" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing nginx port" />
   </component>
 </project>
