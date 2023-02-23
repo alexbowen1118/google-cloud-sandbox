@@ -12,7 +12,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo:latest', '.']
 
-images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/latest']
+images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo:latest']
 
 options:
   logging: CLOUD_LOGGING_ONLY
