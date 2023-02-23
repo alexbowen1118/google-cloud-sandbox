@@ -2,17 +2,15 @@ steps:
 # Run docker-compose.yml
   - name: 'docker/compose'
     id: 'compose-up'
-    args: [ '-f', 'src/docker-compose.yml', 'up', '-d' ]
+    args: [
+      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo'
+      '-f', 'src/docker-compose.yml',
+      'up', '--build', 'web']
 
-# Build the new docker image.
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/google-cloud-sandbox-image', '.']
+    args: ['tag', 'google-cloud-sandbox-image', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/google-cloud-sandbox-image']
 
-# Push the new image to the Artifact Registry.
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/google-cloud-sandbox-image:latest', '.']
-
-images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/google-cloud-sandbox-image']
+images: ['us-west2-docker.pkg.dev/$PROJECT_ID/google-cloud-sandbox-repo/google-cloud-sandbox-image']
 
 options:
   logging: CLOUD_LOGGING_ONLY
