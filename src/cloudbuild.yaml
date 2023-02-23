@@ -10,7 +10,7 @@ steps:
 
 # Push the new image to the Artifact Registry.
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/google-cloud-sandbox-image', '.']
+    args: ['push', '-t', 'us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/google-cloud-sandbox-image:latest', '.']
 
 images: ['us-west2-docker.pkg.dev/ringed-marker-378116/google-cloud-sandbox-repo/google-cloud-sandbox-image']
 
