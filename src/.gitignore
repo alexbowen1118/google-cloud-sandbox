@@ -1,6 +1,6 @@
 logs/*
 !logs/.gitkeep
-secrets/
+#secrets/
 documentation/
 !example.env
 .DS_Store
