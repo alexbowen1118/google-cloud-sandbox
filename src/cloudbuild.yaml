@@ -5,7 +5,7 @@ steps:
     args: [
       '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
       '-f', 'src/docker-compose.yml',
-      'up', '--build']
+      'up', '--build', '-d']
 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['tag', 'google-cloud-sandbox-image', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/google-cloud-sandbox-image']
