@@ -7,55 +7,8 @@ steps:
     args: [
       '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
       '-f', 'src/docker-compose.yml',
-      'up', '--build', 'nginx']
-
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', 'mariadb' ]
-
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', 'api' ]
-
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', 'filefinder' ]
-
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', 'calendar' ]
-
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', 'visitation' ]
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', 'legacy' ]
-
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', 'phpmyadmin' ]
+      'up', '--build', 'nginx', 'mariadb', 'api', 'filefinder', 'calendar',
+      'visitation', 'legacy', 'phpmyadmin']
 
 # Tag images
 # ____________________________________________________________________________________
