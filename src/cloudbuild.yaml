@@ -31,35 +31,36 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'tag',
-      'api',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api'
+      'api:$COMMIT_SHA',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api:$COMMIT_SHA'
     ]
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'build', '-f', 'src/legacy_application/Dockerfile',
-      '-t', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy'
-    ]
-
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'calendar',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar'
-    ]
-
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'visitation',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation'
-    ]
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'filefinder',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder:$COMMIT_SHA'
+#    ]
+#
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'calendar',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar:$COMMIT_SHA'
+#    ]
+#
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'visitation',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation:$COMMIT_SHA'
+#    ]
 
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'tag',
       'legacy',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy'
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy:$COMMIT_SHA'
     ]
 
   - name: 'gcr.io/cloud-builders/docker'
@@ -71,10 +72,10 @@ steps:
 
 images: ['us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx',
          'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb',
-         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api',
-         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder',
-         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar',
-         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation',
+         #'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api',
+         #'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder',
+         #'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar',
+        # 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation',
          'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy',
          'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin'
         ]

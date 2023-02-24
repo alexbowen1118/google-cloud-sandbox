@@ -87,14 +87,7 @@
       <workItem from="1677182550001" duration="36000" />
       <workItem from="1677185622491" duration="658000" />
       <workItem from="1677242260159" duration="3976000" />
-      <workItem from="1677247003616" duration="6444000" />
-    </task>
-    <task id="LOCAL-00001" summary="Small changes to documentation">
-      <created>1676478084087</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676478084087</updated>
+      <workItem from="1677247003616" duration="7585000" />
     </task>
     <task id="LOCAL-00002" summary="added options for cloud logging">
       <created>1677084580140</created>
@@ -432,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677253154319</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="edit to image builder">
+      <created>1677253553960</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1677253553961</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
