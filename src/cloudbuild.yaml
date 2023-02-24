@@ -3,7 +3,7 @@ steps:
   - name: 'docker/compose'
     id: 'compose-up'
     args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
+      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo', '.'
       '-f', 'src/docker-compose.yml',
       'up', '--build', '-d']
 
