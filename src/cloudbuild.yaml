@@ -1,11 +1,11 @@
 steps:
 
-  - name: 'docker/compose'
-    id: 'compose-up'
-    args: [
-      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
-      '-f', 'src/docker-compose.yml',
-      'up', '--build', '-d', 'nginx', 'mariadb']
+#  - name: 'docker/compose'
+#    id: 'compose-up'
+#    args: [
+#      '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
+#      '-f', 'src/docker-compose.yml',
+#      'up', '--build', '-d', 'nginx', 'mariadb', 'legacy']
 
   - name: 'gcr.io/cloud-builders/docker'
     args: [

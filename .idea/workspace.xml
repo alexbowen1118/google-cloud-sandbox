@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="edit to image builder">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <workItem from="1677182550001" duration="36000" />
       <workItem from="1677185622491" duration="658000" />
       <workItem from="1677242260159" duration="3976000" />
-      <workItem from="1677247003616" duration="4800000" />
+      <workItem from="1677247003616" duration="5180000" />
     </task>
     <task id="LOCAL-00001" summary="Small changes to documentation">
       <created>1676478084087</created>
@@ -376,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677251241892</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="edit to image builder">
+      <created>1677251889297</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1677251889297</updated>
+    </task>
+    <task id="LOCAL-00043" summary="edit to image builder">
+      <created>1677251916837</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1677251916837</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
