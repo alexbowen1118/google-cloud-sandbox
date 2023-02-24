@@ -14,8 +14,8 @@ steps:
     ]
 
 images: [
-  'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx'
-  'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb'
+  'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx',
+  'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb',
   'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy'
   ]
 
