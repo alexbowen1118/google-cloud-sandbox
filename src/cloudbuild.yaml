@@ -7,7 +7,7 @@ steps:
     args: [
       '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
       '-f', 'src/docker-compose.yml',
-      'up', '--build', '-d', 'nginx', 'mariadb:10.6', 'api', 'filefinder', 'calendar',
+      'up', '--build', '-d', 'nginx', 'mariadb', 'api', 'filefinder', 'calendar',
       'visitation', 'legacy', 'phpmyadmin']
 
 # Tag images
