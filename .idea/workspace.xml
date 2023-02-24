@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="edit to image builder">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,14 +88,7 @@
       <workItem from="1677242260159" duration="3976000" />
       <workItem from="1677247003616" duration="8567000" />
       <workItem from="1677255793875" duration="2722000" />
-      <workItem from="1677258613514" duration="1442000" />
-    </task>
-    <task id="LOCAL-00006" summary="messing with cloudbuild.yaml">
-      <created>1677091874659</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1677091874659</updated>
+      <workItem from="1677258613514" duration="1735000" />
     </task>
     <task id="LOCAL-00007" summary="messing with cloudbuild.yaml">
       <created>1677092514229</created>
@@ -435,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677259205626</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="edit to image builder">
+      <created>1677260079624</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1677260079625</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
