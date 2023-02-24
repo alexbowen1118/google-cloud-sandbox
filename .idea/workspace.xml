@@ -49,7 +49,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexb/PhpstormProjects/ncsufall2022/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexb/PhpstormProjects/priv-apps&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
@@ -86,7 +86,8 @@
       <workItem from="1677173651229" duration="6749000" />
       <workItem from="1677182550001" duration="36000" />
       <workItem from="1677185622491" duration="658000" />
-      <workItem from="1677242260159" duration="2414000" />
+      <workItem from="1677242260159" duration="3976000" />
+      <workItem from="1677247003616" duration="2124000" />
     </task>
     <task id="LOCAL-00001" summary="Small changes to documentation">
       <created>1676478084087</created>
@@ -333,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677245120571</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="edit to image builder">
+      <created>1677245290531</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1677245290531</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
