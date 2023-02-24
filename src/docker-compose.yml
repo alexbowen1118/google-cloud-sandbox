@@ -33,6 +33,7 @@ services:
 
 
   api:
+    image: api
     build: ./api
     depends_on:
       - mariadb
@@ -78,6 +79,7 @@ services:
     #     - dev.env
 
   filefinder:
+      image: filefinder
       build:
           context: filefinder/
           dockerfile: Dockerfile
@@ -90,6 +92,7 @@ services:
           - dev.env
 
   calendar:
+    image: calendar
     build:
       context: calendar/
       dockerfile: dev.Dockerfile
@@ -102,6 +105,7 @@ services:
       - dev.env
 
   visitation:
+    image: visitation
     build:
       context: visitation/
       dockerfile: dev.Dockerfile
@@ -114,6 +118,7 @@ services:
       - dev.env
 
   legacy:
+    image: legacy
     build:
       context: legacy_application/
       dockerfile: Dockerfile
