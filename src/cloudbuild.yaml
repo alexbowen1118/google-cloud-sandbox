@@ -8,7 +8,8 @@ steps:
       '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
       '-f', 'src/docker-compose.yml',
       'up', '--build', '-d', 'nginx', 'mariadb', 'legacy', 'api',
-      'filefinder', 'calendar', 'visitation',  'phpmyadmin'
+      # 'filefinder', 'calendar', 'visitation',
+      'phpmyadmin'
     ]
 
 # Tag images
@@ -72,7 +73,7 @@ steps:
 
 images: ['us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx',
          'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb',
-         #'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api',
          #'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder',
          #'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar',
         # 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation',
