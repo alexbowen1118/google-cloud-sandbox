@@ -15,26 +15,26 @@ steps:
 # Tag images
 # ____________________________________________________________________________________
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'nginx',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx'
-    ]
-
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'mariadb:10.6',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb:10.6'
-    ]
-
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'api',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api'
-    ]
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'nginx',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx'
+#    ]
+#
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'mariadb:10.6',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb:10.6'
+#    ]
+#
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'api',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api'
+#    ]
 
 #  - name: 'gcr.io/cloud-builders/docker'
 #    args: [
@@ -56,20 +56,20 @@ steps:
 #      'visitation',
 #      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation:$COMMIT_SHA'
 #    ]
-
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'legacy',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy:$COMMIT_SHA'
-    ]
-
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'phpmyadmin:5.0',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin:5.0'
-    ]
+#
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'legacy',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy:$COMMIT_SHA'
+#    ]
+#
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'phpmyadmin:5.0',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin:5.0'
+#    ]
 
 images: ['us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx',
          'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb',
