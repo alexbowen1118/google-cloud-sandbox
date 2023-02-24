@@ -80,3 +80,4 @@ images: ['us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx'
 
 options:
   logging: CLOUD_LOGGING_ONLY
+  machineType: 'E2_HIGHCPU_8'
