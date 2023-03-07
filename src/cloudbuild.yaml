@@ -7,7 +7,7 @@ steps:
     args: [
       '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
       '-f', 'src/docker-compose.yml',
-      'up', '--build', '-d', 'legacy', 'phpmyadmin'
+      'up', '--build', '-d', 'legacy'
     ]
 
 # Tag images
@@ -77,7 +77,7 @@ images:
 #         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar',
 #         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation',
         ['us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy',
-         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin'
+#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin'
         ]
 
 options:
