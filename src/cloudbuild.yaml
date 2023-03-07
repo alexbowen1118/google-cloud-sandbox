@@ -62,12 +62,12 @@ steps:
       'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy'
     ]
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'tag',
-      'phpmyadmin:5.0',
-      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin:5.0'
-    ]
+#  - name: 'gcr.io/cloud-builders/docker'
+#    args: [
+#      'tag',
+#      'phpmyadmin:5.0',
+#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin:5.0'
+#    ]
 
 images:
 #         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx',

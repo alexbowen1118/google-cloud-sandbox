@@ -107,14 +107,7 @@
       <workItem from="1677855839905" duration="594000" />
       <workItem from="1678124774465" duration="8863000" />
       <workItem from="1678192253289" duration="86000" />
-      <workItem from="1678192424906" duration="4074000" />
-    </task>
-    <task id="LOCAL-00009" summary="messing with cloudbuild.yaml">
-      <created>1677093105641</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1677093105641</updated>
+      <workItem from="1678192424906" duration="4341000" />
     </task>
     <task id="LOCAL-00010" summary="messing with cloudbuild.yaml">
       <created>1677093302272</created>
@@ -452,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678196511108</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="changed cloudbuild to just legacy">
+      <created>1678196693287</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1678196693287</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,6 +491,7 @@
     <MESSAGE value="edit to image builder" />
     <MESSAGE value="change to legacy_application dockerfile" />
     <MESSAGE value="changing apache settings, changed cloudbuild to just legacy/phpmyadmin" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing apache settings, changed cloudbuild to just legacy/phpmyadmin" />
+    <MESSAGE value="changed cloudbuild to just legacy" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed cloudbuild to just legacy" />
   </component>
 </project>
