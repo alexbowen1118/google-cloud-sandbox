@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legacy_application/config/000-default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/config/000-default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legacy_application/config/apache2.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/config/apache2.conf" afterDir="false" />
+    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="reverting apache changes">
+      <change beforePath="$PROJECT_DIR$/src/legacy_application/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,14 +107,7 @@
       <workItem from="1677855839905" duration="594000" />
       <workItem from="1678124774465" duration="8863000" />
       <workItem from="1678192253289" duration="86000" />
-      <workItem from="1678192424906" duration="6323000" />
-    </task>
-    <task id="LOCAL-00012" summary="messing with cloudbuild.yaml">
-      <created>1677093680421</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1677093680421</updated>
+      <workItem from="1678192424906" duration="6563000" />
     </task>
     <task id="LOCAL-00013" summary="messing with cloudbuild.yaml">
       <created>1677093837860</created>
@@ -454,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678198226240</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="reverting apache changes">
+      <created>1678198994795</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1678198994795</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,6 +494,7 @@
     <MESSAGE value="changed cloudbuild to just legacy" />
     <MESSAGE value="fixed error in cloudbuild.yaml" />
     <MESSAGE value="changed more apache" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed more apache" />
+    <MESSAGE value="reverting apache changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverting apache changes" />
   </component>
 </project>
