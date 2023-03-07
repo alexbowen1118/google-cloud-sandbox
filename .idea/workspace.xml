@@ -108,14 +108,7 @@
       <workItem from="1677855839905" duration="594000" />
       <workItem from="1678124774465" duration="8863000" />
       <workItem from="1678192253289" duration="86000" />
-      <workItem from="1678192424906" duration="9955000" />
-    </task>
-    <task id="LOCAL-00015" summary="messing with cloudbuild.yaml">
-      <created>1677094970911</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1677094970911</updated>
+      <workItem from="1678192424906" duration="11214000" />
     </task>
     <task id="LOCAL-00016" summary="messing with cloudbuild.yaml">
       <created>1677095089939</created>
@@ -453,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678207889316</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="changing dockerfile for legacy">
+      <created>1678208939593</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1678208939593</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,6 +496,7 @@
     <MESSAGE value="fixed error in cloudbuild.yaml" />
     <MESSAGE value="changed more apache" />
     <MESSAGE value="reverting apache changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="reverting apache changes" />
+    <MESSAGE value="changing dockerfile for legacy" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing dockerfile for legacy" />
   </component>
 </project>
