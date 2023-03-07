@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="reverting apache changes">
+    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/legacy_application/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,14 +108,7 @@
       <workItem from="1677855839905" duration="594000" />
       <workItem from="1678124774465" duration="8863000" />
       <workItem from="1678192253289" duration="86000" />
-      <workItem from="1678192424906" duration="6563000" />
-    </task>
-    <task id="LOCAL-00013" summary="messing with cloudbuild.yaml">
-      <created>1677093837860</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1677093837860</updated>
+      <workItem from="1678192424906" duration="8925000" />
     </task>
     <task id="LOCAL-00014" summary="messing with cloudbuild.yaml">
       <created>1677094798296</created>
@@ -452,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678198994795</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="reverting apache changes">
+      <created>1678199219295</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1678199219295</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
