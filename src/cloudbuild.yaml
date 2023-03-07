@@ -1,59 +1,60 @@
 steps:
-# Build containers
-# ____________________________________________________________________________________
+  # Build containers
+  # ____________________________________________________________________________________
 
   - name: 'docker/compose'
     id: 'compose-up'
     args: [
       '-p', 'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo',
       '-f', 'src/docker-compose.yml',
-      'up', '--build', '-d', 'legacy'
+      'up', '--build', '-d', 'nginx', 'mariadb', 'legacy', 'api',
+      'filefinder', 'calendar', 'visitation',  'phpmyadmin'
     ]
 
-# Tag images
-# ____________________________________________________________________________________
+  # Tag images
+  # ____________________________________________________________________________________
 
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: [
-#      'tag',
-#      'nginx',
-#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx'
-#    ]
-#
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: [
-#      'tag',
-#      'mariadb:10.6',
-#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb:10.6'
-#    ]
-#
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: [
-#      'tag',
-#      'api',
-#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api'
-#    ]
-#
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: [
-#      'tag',
-#      'filefinder',
-#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder'
-#    ]
-#
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: [
-#      'tag',
-#      'calendar',
-#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar'
-#    ]
-#
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: [
-#      'tag',
-#      'visitation',
-#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation'
-#    ]
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'tag',
+      'nginx',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx'
+    ]
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'tag',
+      'mariadb:10.6',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb:10.6'
+    ]
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'tag',
+      'api',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api'
+    ]
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'tag',
+      'filefinder',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder'
+    ]
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'tag',
+      'calendar',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar'
+    ]
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'tag',
+      'visitation',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation'
+    ]
 
   - name: 'gcr.io/cloud-builders/docker'
     args: [
@@ -62,23 +63,22 @@ steps:
       'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy'
     ]
 
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: [
-#      'tag',
-#      'phpmyadmin:5.0',
-#      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin:5.0'
-#    ]
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'tag',
+      'phpmyadmin:5.0',
+      'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin:5.0'
+    ]
 
-images:
-#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx',
-#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb',
-#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api',
-#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder',
-#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar',
-#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation',
-        ['us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy',
-#         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin'
-        ]
+images: ['us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/nginx',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/mariadb',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/api',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/filefinder',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/calendar',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/visitation',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/legacy',
+         'us-west2-docker.pkg.dev/${PROJECT_ID}/google-cloud-sandbox-repo/phpmyadmin'
+]
 
 options:
   logging: CLOUD_LOGGING_ONLY

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/legacy_application/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,14 +109,9 @@
       <workItem from="1677855839905" duration="594000" />
       <workItem from="1678124774465" duration="8863000" />
       <workItem from="1678192253289" duration="86000" />
-      <workItem from="1678192424906" duration="11214000" />
-    </task>
-    <task id="LOCAL-00016" summary="messing with cloudbuild.yaml">
-      <created>1677095089939</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1677095089939</updated>
+      <workItem from="1678192424906" duration="12092000" />
+      <workItem from="1678217220183" duration="29000" />
+      <workItem from="1678217268863" duration="1515000" />
     </task>
     <task id="LOCAL-00017" summary="messing with cloudbuild.yaml">
       <created>1677095157193</created>
@@ -453,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678208939593</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="changing dockerfile for legacy">
+      <created>1678210220769</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1678210220769</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
