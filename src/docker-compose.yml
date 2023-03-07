@@ -2,129 +2,129 @@ version: '3.7'
 
 # Declare the containers to run in the compose stack
 services:
-  nginx:
-    image: nginx
-    restart: unless-stopped
-    # Copy config files
-    volumes:
-      - ./secrets/domain.crt:/run/secrets/domain.crt
-      - ./secrets/domain.key:/run/secrets/domain.key
-      - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template
-    # Expose https and http ports. All http traffic will be redirected to https by nginx
-    ports:
-      - "8443:8443"
-      - "80:80"
-    env_file:
-      - dev.env
-
-
-  mariadb:
-    image: mariadb:10.6
-    restart: unless-stopped
-    ports:
-      - 3307:3306
-    volumes:
-      # Mount a volume for mariadb's persistent files for lifecylce outside of stack
-      - "./db/data:/var/lib/mysql"
-      # Mount the db_schema directory into the container to be auto-read and created in the new db
-      - "./db/db_schema:/docker-entrypoint-initdb.d"
-    env_file:
-      - dev.env
-
-
-  api:
-    image: api
-    build: ./api
-    depends_on:
-      - mariadb
-      - nginx
-    restart: unless-stopped
-    ports:
-      - 8080:80
-    volumes:
-      - ./api/app:/var/www/app
-      - ./api/src:/var/www/src
-      - ./api/public:/var/www/public
-      - ./api/tests:/var/www/tests
-      - ./logs:/var/www/logs
-      - ./secrets/jwt_key.json:/run/secrets/jwt_key.json
-    environment:
-      docker: "true"
-      XDEBUG_MODE: ${XDEBUG_MODE}
-    env_file:
-      - dev.env
-    # api_test:
-    #   extra_hosts:
-    #     - "host.docker.internal:host-gateway"
-    #   build:
-    #     context: ./api
-    #     dockerfile: Dockerfile-test-coverage
-    #   depends_on:
-    #     - mariadb
-    #     - nginx
-    #   restart: "no"
-    #   ports:
-    #     - 8090:90
-    #   volumes:
-    #     - ./api/app:/var/www/app
-    #     - ./api/src:/var/www/src
-    #     - ./api/public:/var/www/public
-    #     - ./api/tests:/var/www/tests
-    #     - ./logs:/var/www/logs
-    #     - ./secrets/jwt_key.json:/run/secrets/jwt_key.json
-    #   environment:
-    #     docker: "true"
-    #     XDEBUG_MODE: ${XDEBUG_MODE}
-    #   env_file:
-    #     - dev.env
-
-  filefinder:
-      image: filefinder
-      build:
-          context: filefinder/
-          dockerfile: Dockerfile
-      depends_on:
-          - api
-      restart: unless-stopped
-      volumes:
-          - ./filefinder/src:/app/src
-      env_file:
-          - dev.env
-
-  calendar:
-    image: calendar
-    build:
-      context: calendar/
-      dockerfile: dev.Dockerfile
-    depends_on:
-      - api
-    restart: unless-stopped
-    volumes:
-      - ./calendar/default.conf.template:/etc/nginx/templates/default.conf.template
-    env_file:
-      - dev.env
-
-  visitation:
-    image: visitation
-    build:
-      context: visitation/
-      dockerfile: dev.Dockerfile
-    depends_on:
-      - api
-    restart: unless-stopped
-    volumes:
-      - ./visitation/src:/app/src
-    env_file:
-      - dev.env
+#  nginx:
+#    image: nginx
+#    restart: unless-stopped
+#    # Copy config files
+#    volumes:
+#      - ./secrets/domain.crt:/run/secrets/domain.crt
+#      - ./secrets/domain.key:/run/secrets/domain.key
+#      - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template
+#    # Expose https and http ports. All http traffic will be redirected to https by nginx
+#    ports:
+#      - "443:443"
+#      - "80:80"
+#    env_file:
+#      - dev.env
+#
+#
+#  mariadb:
+#    image: mariadb:10.6
+#    restart: unless-stopped
+#    ports:
+#      - 3307:3306
+#    volumes:
+#      # Mount a volume for mariadb's persistent files for lifecylce outside of stack
+#      - "./db/data:/var/lib/mysql"
+#      # Mount the db_schema directory into the container to be auto-read and created in the new db
+#      - "./db/db_schema:/docker-entrypoint-initdb.d"
+#    env_file:
+#      - dev.env
+#
+#
+#  api:
+#    image: api
+#    build: ./api
+#    depends_on:
+#      - mariadb
+#      - nginx
+#    restart: unless-stopped
+#    ports:
+#      - 8080:80
+#    volumes:
+#      - ./api/app:/var/www/app
+#      - ./api/src:/var/www/src
+#      - ./api/public:/var/www/public
+#      - ./api/tests:/var/www/tests
+#      - ./logs:/var/www/logs
+#      - ./secrets/jwt_key.json:/run/secrets/jwt_key.json
+#    environment:
+#      docker: "true"
+#      XDEBUG_MODE: ${XDEBUG_MODE}
+#    env_file:
+#      - dev.env
+#    # api_test:
+#    #   extra_hosts:
+#    #     - "host.docker.internal:host-gateway"
+#    #   build:
+#    #     context: ./api
+#    #     dockerfile: Dockerfile-test-coverage
+#    #   depends_on:
+#    #     - mariadb
+#    #     - nginx
+#    #   restart: "no"
+#    #   ports:
+#    #     - 8090:90
+#    #   volumes:
+#    #     - ./api/app:/var/www/app
+#    #     - ./api/src:/var/www/src
+#    #     - ./api/public:/var/www/public
+#    #     - ./api/tests:/var/www/tests
+#    #     - ./logs:/var/www/logs
+#    #     - ./secrets/jwt_key.json:/run/secrets/jwt_key.json
+#    #   environment:
+#    #     docker: "true"
+#    #     XDEBUG_MODE: ${XDEBUG_MODE}
+#    #   env_file:
+#    #     - dev.env
+#
+#  filefinder:
+#      image: filefinder
+#      build:
+#          context: filefinder/
+#          dockerfile: Dockerfile
+#      depends_on:
+#          - api
+#      restart: unless-stopped
+#      volumes:
+#          - ./filefinder/src:/app/src
+#      env_file:
+#          - dev.env
+#
+#  calendar:
+#    image: calendar
+#    build:
+#      context: calendar/
+#      dockerfile: dev.Dockerfile
+#    depends_on:
+#      - api
+#    restart: unless-stopped
+#    volumes:
+#      - ./calendar/default.conf.template:/etc/nginx/templates/default.conf.template
+#    env_file:
+#      - dev.env
+#
+#  visitation:
+#    image: visitation
+#    build:
+#      context: visitation/
+#      dockerfile: dev.Dockerfile
+#    depends_on:
+#      - api
+#    restart: unless-stopped
+#    volumes:
+#      - ./visitation/src:/app/src
+#    env_file:
+#      - dev.env
 
   legacy:
     image: legacy
     build:
       context: legacy_application/
       dockerfile: Dockerfile
-    depends_on:
-      - mariadb
-      - nginx
+#    depends_on:
+#      - mariadb
+#      - nginx
     restart: unless-stopped
     # Mount the site files into the container into the container (host_path:container_path:read-only)
     # changed to have full access
@@ -132,14 +132,14 @@ services:
       - "./legacy_application/src/priv_prod/opt:/opt"
     env_file:
       - dev.env
-
-  phpmyadmin:
-    image: phpmyadmin:5.0
-    restart: always
-    depends_on:
-      - mariadb
-    environment:
-      # Point phpmyadmin to the mariadb container using mariadb's service name
-      - PMA_HOST=mariadb
-      # The absolute uri is needed for use behind a reverse proxy
-      - PMA_ABSOLUTE_URI=/dbadmin/
+#
+#  phpmyadmin:
+#    image: phpmyadmin:5.0
+#    restart: always
+#    depends_on:
+#      - mariadb
+#    environment:
+#      # Point phpmyadmin to the mariadb container using mariadb's service name
+#      - PMA_HOST=mariadb
+#      # The absolute uri is needed for use behind a reverse proxy
+#      - PMA_ABSOLUTE_URI=/dbadmin/

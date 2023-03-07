@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="edit to image builder">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_22_2023_9_11_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_22_2023_9_11_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legacy_application/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/legacy_application/config/000-default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/config/000-default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/legacy_application/config/apache2.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/legacy_application/config/apache2.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nginx/default.conf.template" beforeDir="false" afterPath="$PROJECT_DIR$/src/nginx/default.conf.template" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
@@ -39,8 +43,8 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="90ea2a4e-8e79-47e7-8289-2aac560d0dfc" />
-        <option name="url" value="https://github.com/alexbowen1118/google-cloud-playground.git" />
+        <option name="accountId" value="a22df454-7b67-4e35-adbc-e3acde3b8e2b" />
+        <option name="url" value="https://github.com/alexbowen1118/google-cloud-sandbox.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -52,22 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabowen/PhpstormProjects/google-cloud-sandbox&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/gabowen/PhpstormProjects/priv-apps",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Apache Config",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexb\PhpstormProjects\ncsufall2022\src" />
@@ -106,14 +110,9 @@
       <workItem from="1677687507154" duration="669000" />
       <workItem from="1677788847957" duration="3281000" />
       <workItem from="1677855839905" duration="594000" />
-      <workItem from="1678124774465" duration="3836000" />
-    </task>
-    <task id="LOCAL-00007" summary="messing with cloudbuild.yaml">
-      <created>1677092514229</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1677092514229</updated>
+      <workItem from="1678124774465" duration="8863000" />
+      <workItem from="1678192253289" duration="86000" />
+      <workItem from="1678192424906" duration="3863000" />
     </task>
     <task id="LOCAL-00008" summary="messing with cloudbuild.yaml">
       <created>1677092676735</created>
@@ -451,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677260079625</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="change to legacy_application dockerfile">
+      <created>1678134272861</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1678134272862</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,6 +494,7 @@
     <MESSAGE value="messing with cloudbuild.yaml" />
     <MESSAGE value="changing nginx port" />
     <MESSAGE value="edit to image builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit to image builder" />
+    <MESSAGE value="change to legacy_application dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to legacy_application dockerfile" />
   </component>
 </project>
