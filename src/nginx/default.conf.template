@@ -9,8 +9,8 @@ server {
 }
 
 server {
-    listen 443 ssl;
-    listen [::]:443 ssl;
+    listen 8443 ssl;
+    listen [::]:8443 ssl;
     server_name ${DEFAULT_HOSTNAME};
     ssl_certificate /run/secrets/domain.crt;
     ssl_certificate_key  /run/secrets/domain.key;

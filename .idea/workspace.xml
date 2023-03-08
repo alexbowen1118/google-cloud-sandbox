@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="cloudbuild.yaml">
+    <list default="true" id="f63d39a3-42f8-474d-8d25-30aef5d45126" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudbuild.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nginx/default.conf.template" beforeDir="false" afterPath="$PROJECT_DIR$/src/nginx/default.conf.template" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +112,7 @@
       <workItem from="1678192424906" duration="12092000" />
       <workItem from="1678217220183" duration="29000" />
       <workItem from="1678217268863" duration="2130000" />
-      <workItem from="1678281102014" duration="319000" />
-    </task>
-    <task id="LOCAL-00020" summary="messing with cloudbuild.yaml">
-      <created>1677097957854</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1677097957854</updated>
+      <workItem from="1678281102014" duration="1041000" />
     </task>
     <task id="LOCAL-00021" summary="changing nginx port">
       <created>1677098127152</created>
@@ -457,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678219497274</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="cloudbuild.yaml">
+      <created>1678281444425</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1678281444425</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,6 +503,7 @@
     <MESSAGE value="changing dockerfile for legacy" />
     <MESSAGE value="reverting to full build / normal apache" />
     <MESSAGE value="reverted docker-compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="reverted docker-compose" />
+    <MESSAGE value="cloudbuild.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="cloudbuild.yaml" />
   </component>
 </project>
