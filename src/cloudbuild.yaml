@@ -1,7 +1,5 @@
 steps:
   # Build containers
-  # ____________________________________________________________________________________
-
   - name: 'docker/compose'
     id: 'compose-up'
     args: [
@@ -12,8 +10,6 @@ steps:
     ]
 
   # Tag images
-  # ____________________________________________________________________________________
-
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'tag',

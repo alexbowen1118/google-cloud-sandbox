@@ -122,9 +122,9 @@ services:
     build:
       context: legacy_application/
       dockerfile: Dockerfile
-#    depends_on:
-#      - mariadb
-#      - nginx
+    depends_on:
+      - mariadb
+      - nginx
     restart: unless-stopped
     # Mount the site files into the container into the container (host_path:container_path:read-only)
     # changed to have full access
